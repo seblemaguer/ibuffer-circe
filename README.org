@@ -1,0 +1,39 @@
+This package contains ibuffer-circe.el
+
+* Info
+
++ Author: Sébastien Le Maguer (based on a project of Fabián Ezequiel Gallina)
++ Project homepage: [[https://github.com/seblemaguer/ibuffer-circe]]
++ adapted from : https://github.com/fgallina/ibuffer-rcirc
+
+* Introduction
+
+Provides circe server filtering for ibuffer.
+
+* Usage
+
+To group buffers by IRC server:
+
+  ~M-x ibuffer-circe-set-filter-groups-by-server~
+
+* Requirements
+
+Should work with stock Emacs>=24 (and probably older).
+
+* Installation
+
+See ibuffer-circe.el header
+
+* Acknowledgments
+
+Kudos to @purcell by defining a nice way to leverage this kind of
+ibuffer extensions: https://github.com/purcell/ibuffer-vc
+
+* Bug Reports
+
+If you find a bug please report it in the github tracker.
+
+* License
+
+ibuffer-circe.el is free software under the GPL v3, see LICENSE file
+for details.
