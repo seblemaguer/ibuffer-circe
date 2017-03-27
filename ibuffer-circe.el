@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2016  Sébastien Le Maguer (based on a project of Fabián Ezequiel Gallina)
 
-;; Author: Sébastien Le Maguer <slemaguer@coli.uni-saarland.de>
+;; Author: Sébastien Le Maguer 
 ;; Keywords: buffer, convenience, comm
 ;; Package-Requires: ((cl-lib "0.5") (circe "20170304.419"))
 ;; X-URL: https://github.com/seblemaguer/ibuffer-circe
