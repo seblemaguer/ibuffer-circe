@@ -2,12 +2,12 @@
 
 ;; Copyright (C) 2016  Sébastien Le Maguer (based on a project of Fabián Ezequiel Gallina)
 
-;; Author: Sébastien Le Maguer 
+;; Author: Sébastien Le Maguer
 ;; Keywords: buffer, convenience, comm
-;; Package-Requires: ((cl-lib "0.5") (circe "20170304.419"))
+;; Package-Requires: ((cl-lib "0.5") (circe "2.5"))
 ;; X-URL: https://github.com/seblemaguer/ibuffer-circe
 ;; URL: https://github.com/seblemaguer/ibuffer-circe
-;; Version: 0.1
+;; Version: 0.2
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@
 
 ;;; Commentary:
 
-;; Provides circe activity tracking and server filtering for ibuffer.
+;; Provides circe server filtering for ibuffer.
 ;; This code is adapted from : https://github.com/fgallina/ibuffer-rcirc
 
 ;;; Installation:
@@ -48,16 +48,6 @@
 (require 'ibuffer)
 (require 'ibuf-ext)
 (require 'circe)
-
-(defun check-irc ()
-  (interactive)
-  (if (eq major-mode 'circe-server-mode)
-      (message (buffer-name (current-buffer)))
-    (if (derived-mode-p major-mode 'circe-mode)
-        (message circe-server-buffer)
-      (message "not ok as not expected"))))
-
-
 
 (defun ibuffer-circe--server-buffers ()
   "Return the list of current server buffers."
